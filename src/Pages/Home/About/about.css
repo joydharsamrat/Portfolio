@@ -1,0 +1,15 @@
+.aboutContainer {
+
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url('/public/expBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: fit-content;
+
+}
+
+
+.aboutContainer>div>div>p {
+    margin: 10px 0;
+}

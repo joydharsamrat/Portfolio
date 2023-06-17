@@ -1,8 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import NavLink from '../../components/Navlink';
 
 const Header = () => {
     const [theme, setTheme] = useState(localStorage.getItem('portfolioTheme'));
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+
+
+
+        const handelScroll = () => {
+            if (window.scrollY > 0) {
+                setScroll(true)
+            }
+            else {
+                setScroll(false)
+            }
+        }
+
+
+        let timeoutId
+
+        const handleScrollWithTimeout = () => {
+            handelScroll()
+            clearTimeout(timeoutId)
+            timeoutId = setTimeout(() => {
+                setScroll(false)
+            }, 500)
+        }
+
+        window.addEventListener('scroll', handleScrollWithTimeout)
+
+        return () => {
+            window.removeEventListener('scroll', handleScrollWithTimeout)
+            clearTimeout(timeoutId)
+        }
+
+    }, [])
+
+
+
+
     useEffect(() => {
         if (theme === "light") {
             localStorage.setItem("portfolioTheme", "light")
@@ -20,8 +59,9 @@ const Header = () => {
     const handelThemeSwitch = () => {
         setTheme(theme === "dark" ? "light" : "dark")
     }
+
     return (
-        <div className='sticky top-0 z-40'>
+        <div className={`fixed top-0 z-40 dark:bg-gray-800 w-full ${scroll && 'bg-opacity-30 bg-clip-padding backdrop-blur-sm'}`}>
             <div className="navbar bg-transparent top-0 dark:text-white lg:px-12">
                 <div className="navbar-start">
                     <div className="dropdown ">
@@ -29,12 +69,14 @@ const Header = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu dark:bg-gray-600 menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><HashLink smooth to='#about'>About</HashLink></li>
+                            <li><HashLink smooth to='#experience'>Experience</HashLink></li>
                             <li><HashLink smooth to='#skills'>Skills</HashLink></li>
                             <li><HashLink smooth to='#projects'>Projects</HashLink></li>
                             <li><HashLink smooth to='#contact'>Contact</HashLink></li>
                         </ul>
                     </div>
-                    <HashLink smooth to='#top' className="btn btn-ghost normal-case text-xl">SAMRAT</HashLink>
+                    <NavLink href='#top' className="btn btn-ghost normal-case text-xl">SAMRAT</NavLink>
                     <label className=" hover:bg-gray-100 p-2 rounded dark:hover:bg-gray-600">
                         <input className='hidden' type="checkbox" id='theme' onChange={handelThemeSwitch} />
                         {
@@ -53,9 +95,11 @@ const Header = () => {
                 <div className="navbar-end">
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal p-0">
-                            <li><HashLink smooth to='#skills'>Skills</HashLink></li>
-                            <li><HashLink smooth to='#projects'>Projects</HashLink></li>
-                            <li><HashLink smooth to='#contact'>Contact</HashLink></li>
+                            <li><NavLink href="#about"  >About</NavLink></li>
+                            <li><NavLink href="#experience"  >Experience</NavLink></li>
+                            <li><NavLink href="#skills"  >Skills</NavLink></li>
+                            <li><NavLink href="#projects"  >Projects</NavLink></li>
+                            <li><NavLink href="#contact"  >Contact</NavLink></li>
                         </ul>
                     </div>
 

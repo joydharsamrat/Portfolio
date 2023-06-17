@@ -21,11 +21,11 @@ const ProjectsSummary = () => {
         }
     };
     return (
-        <div data-aos="fade-up" className=' dark:text-white mb-12 py-5 min-h-screen' id='projects'>
-            <h1 className='mt-12 mb-12 text-5xl font-bold '>Some Projects I've worked On</h1>
-            <div className='grid lg:grid-cols-2 gap-12 items-center'>
+        <div data-aos="fade-up" className=' dark:text-white mb-12 py-5 min-h-[700px]' id='projects'>
+            <h1 className='mt-12 mb-12 text-3xl lg:text-5xl font-bold '>Some Projects I've worked On</h1>
+            <div className='lg:grid lg:grid-cols-2 gap-12 items-center'>
                 <div>
-                    <div className='card h-full p-10'>
+                    <div className='card h-full lg:p-10'>
                         {activeSlide === 0 && (
                             <div className='flex flex-col justify-between h-full'>
                                 <div>
@@ -116,12 +116,13 @@ const ProjectsSummary = () => {
 
                 <div>
                     <Swiper
-                        slidesPerView={'auto'}
+
                         spaceBetween={30}
                         grabCursor={true}
                         pagination={{
                             clickable: true,
                         }}
+                        slidesPerView={'auto'}
                         breakpoints={
                             {
                                 0: {

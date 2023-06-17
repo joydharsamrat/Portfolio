@@ -21,11 +21,11 @@ export const ContactMe = () => {
 
     return (
         <div className='dark:text-white my-12' id='contact'>
-            <h1 className='mt-12 pt-1 mb-10 text-5xl font-bold '>Get In Touch</h1>
+            <h1 className='mt-12 pt-1 mb-10 text-3xl lg:text-5xl font-bold '>Get In Touch</h1>
 
             <div className='grid lg:grid-cols-3 gap-10 justify-around'>
                 <div data-aos="fade-right" className='bg-white dark:bg-gray-600 p-5 rounded'>
-                    <h3 className='text-5xl mb-5'>Contacts</h3>
+                    <h3 className='text-3xl lg:text-5xl mb-5'>Contacts</h3>
                     <div className='flex items-center gap-3 my-2'>
                         <p className='p-2 h-12 w-12 rounded-full flex justify-center items-center bg-[#e7ecef] dark:bg-gray-800'><FaMobileAlt className='text-2xl'></FaMobileAlt></p>
                         <p className='my-3'><span className='text-3xl'>Mobile</span> <br /> +8801788738658</p>
@@ -44,7 +44,7 @@ export const ContactMe = () => {
                     </div>
                 </div>
                 <div data-aos="fade-down" className='lg:col-span-2 p-5 rounded-xl mt-12 lg:mt-0'>
-                    <h3 className='text-5xl mb-5'>Message Me</h3>
+                    <h3 className='text-3xl lg:text-5xl mb-5'>Message Me</h3>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className='my-3'>
                             <label>Name</label>

@@ -1,19 +1,39 @@
-#svgName {
+#svgName>path {
     stroke-dasharray: 1285.0255126953125;
     stroke-dashoffset: 1285.0255126953125;
     animation: name-animate 20s ease forwards;
 }
 
-#svgLastName {
+#svgLastName>path {
     stroke-dasharray: 1616.58837890625;
     stroke-dashoffset: 1616.58837890625;
     animation: name-animate 20s ease forwards;
+
 }
 
+#svgName {
+    animation: fill-animate 20s ease forwards;
+}
+
+
+
+#svgLastName {
+    animation: fill-animate 20s ease forwards;
+}
 
 @keyframes name-animate {
 
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-animate {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: white;
     }
 }

@@ -8,7 +8,7 @@ const Skills = () => {
     const isInView = useInView(ref)
     return (
         <div ref={ref} data-aos="fade-up" className='dark:text-gray-100 mb-10' id='skills'>
-            <h1 className='mt-12 mb-5 text-5xl font-bold'>Skills I Have</h1>
+            <h1 className='mt-12 mb-5 text-3xl lg:text-5xl font-bold'>Skills I Have</h1>
 
             <div className='my-20 grid md:grid-cols-2 lg:grid-cols-3 gap-20 '>
 
