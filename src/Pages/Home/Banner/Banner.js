@@ -7,7 +7,7 @@ const Banner = () => {
 
     return (
 
-        <div id='top' className='flex mt-16 mb-1o justify-around items-center flex-col-reverse lg:flex-row gap-5 dark:text-gray-100 relative lg:pt-32'>
+        <div id='top' className='flex mt-16 mb-10 justify-around items-center flex-col-reverse lg:flex-row gap-5 dark:text-gray-100 relative lg:pt-32'>
 
 
             <div className='mb-10 lg:mb-0'>

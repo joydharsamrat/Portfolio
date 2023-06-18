@@ -8,8 +8,6 @@ const Header = () => {
 
     useEffect(() => {
 
-
-
         const handelScroll = () => {
             if (window.scrollY > 0) {
                 setScroll(true)
@@ -61,8 +59,8 @@ const Header = () => {
     }
 
     return (
-        <div className={`fixed top-0 z-40 dark:bg-gray-800 w-full ${scroll && 'bg-opacity-30 bg-clip-padding backdrop-blur-sm'}`}>
-            <div className="navbar bg-transparent top-0 dark:text-white lg:px-12">
+        <div className={`fixed top-0 z-40 bg-gray-100 dark:bg-gray-800 w-full ${scroll && 'bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm'}`}>
+            <div className="navbar top-0 dark:text-white lg:px-12">
                 <div className="navbar-start">
                     <div className="dropdown ">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
