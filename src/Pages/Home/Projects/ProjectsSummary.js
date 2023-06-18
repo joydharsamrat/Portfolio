@@ -139,7 +139,7 @@ const ProjectsSummary = () => {
                         onSlideChange={handleSlideChange}
                     >
                         <SwiperSlide>
-                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border ${!isActive && 'opacity-25 border-0'}`}>
+                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm ${!isActive && 'opacity-25 border-0 bg-opacity-100 dark:bg-opacity-100 backdrop-blur-none dark:backdrop-blur-none'}`}>
 
                                 <div className='h-full overflow-y-hidden hover:overflow-y-scroll px-5 pt-5 element'>
                                     <img className="rounded-xl w-full" src="https://i.ibb.co/QbSQpDZ/Happy-Learning.png" alt="" />
@@ -154,7 +154,7 @@ const ProjectsSummary = () => {
                             </div>}
                         </SwiperSlide>
                         <SwiperSlide>
-                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border ${!isActive && 'opacity-25 border-0'}`}>
+                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm ${!isActive && 'opacity-25 border-0 bg-opacity-100 dark:bg-opacity-100 backdrop-blur-none dark:backdrop-blur-none'}`}>
                                 <div className='h-full overflow-y-hidden hover:overflow-y-scroll px-5 pt-5 element'>
                                     <img className=" w-full rounded-xl " src="https://i.ibb.co/7nnydMd/Mobi-Hub-Home-2.png" alt="" />
                                 </div>
@@ -169,7 +169,7 @@ const ProjectsSummary = () => {
                             </div>}
                         </SwiperSlide>
                         <SwiperSlide>
-                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border ${!isActive && 'opacity-25 border-0'}`}>
+                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm ${!isActive && 'opacity-25 border-0 bg-opacity-100 dark:bg-opacity-100 backdrop-blur-none dark:backdrop-blur-none'}`}>
                                 <div className='h-full overflow-y-hidden hover:overflow-y-scroll px-5 pt-5 element'>
                                     <img className=" w-full rounded-xl " src="https://i.ibb.co/zsYFWyC/storyteller.png" alt="" />
                                 </div>

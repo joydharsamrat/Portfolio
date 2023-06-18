@@ -24,7 +24,7 @@ export const ContactMe = () => {
             <h1 className='mt-12 pt-1 mb-10 text-3xl lg:text-5xl font-bold '>Get In Touch</h1>
 
             <div className='grid lg:grid-cols-3 gap-10 justify-around'>
-                <div data-aos="fade-right" className='bg-white dark:bg-gray-600 p-5 rounded'>
+                <div data-aos="fade-right" className='bg-white dark:bg-gray-600 p-5 rounded bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm'>
                     <h3 className='text-3xl lg:text-5xl mb-5'>Contacts</h3>
                     <div className='flex items-center gap-3 my-2'>
                         <p className='p-2 h-12 w-12 rounded-full flex justify-center items-center bg-[#e7ecef] dark:bg-gray-800'><FaMobileAlt className='text-2xl'></FaMobileAlt></p>
@@ -62,7 +62,7 @@ export const ContactMe = () => {
                             <label>Message</label>
                             <textarea className='textarea rounded-none border-b-gray-600 dark:border-b-gray-300 border-x-0 border-t-0 w-full bg-[#e7ecef] dark:bg-gray-800' name="message" />
                         </div>
-                        <input className='btn btn-outline dark:text-white' type="submit" value="Send" />
+                        <input className='btn btn-outline dark:text-white hover:bg-gray-600' type="submit" value="Send" />
                     </form>
                 </div>
             </div>

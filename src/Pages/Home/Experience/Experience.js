@@ -29,12 +29,12 @@ const Experience = () => {
                         <TbTriangleInverted></TbTriangleInverted>
                     </motion.p>
                 </div>
-                <div className='grid lg:grid-cols-2 lg:justify-center gap-5 lg:gap-36 ml-10 items-center'>
-                    <div className='lg:text-right title'>
+                <div className='grid lg:grid-cols-2 lg:justify-center gap-5 lg:gap-36 ml-10 lg:ml-0 items-center'>
+                    <div data-aos='fade-down-right' className='lg:text-right title'>
                         <h2 className='text-2xl font-bold '>Position</h2>
                         <p className='font-semibold'>Duration</p>
                     </div>
-                    <div className='text-left'>
+                    <div data-aos='fade-down' className='text-left'>
                         <p className='font-semibold text-justify'>Responsibilities</p>
                     </div>
                 </div >
@@ -51,14 +51,14 @@ const Experience = () => {
                         <RxDotFilled></RxDotFilled>
                     </motion.p>
                 </div>
-                <div className='grid lg:grid-cols-2 justify-center gap-5 lg:gap-36 items-center mt-12 ml-10 lg:mt-32'>
-                    <div className='lg:text-right title'>
+                <div className='grid lg:grid-cols-2 justify-center gap-5 lg:gap-36 items-center ml-10 lg:ml-0 mt-12 lg:mt-32'>
+                    <div data-aos='fade-right' className='lg:text-right title'>
                         <h2 className='text-2xl font-bold '>Web Developer Intern</h2>
                         <p className='font-semibold'>
                             February 2023 - Jun 2023
                         </p>
                     </div>
-                    <div className='text-left'>
+                    <div data-aos='fade-up' className='text-left'>
                         <p className='font-semibold lg:text-justify'>
                             I have independently developed a website for the company using Next.js for front-end development,
                             Express.js for server-side scripting, and MongoDB for database management.
