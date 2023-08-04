@@ -69,7 +69,8 @@ const Banner = () => {
             </div>
             <div>
 
-                <div className='lg:w-96 lg:h-96 border rounded-full border-white dark:border-gray-600 flex  justify-center items-center'>
+                <motion.div
+                    className='lg:w-96 lg:h-96 border rounded-full border-white dark:border-gray-600 flex  justify-center items-center'>
                     <motion.div
                         drag
                         dragConstraints={{
@@ -84,7 +85,7 @@ const Banner = () => {
                         className='rounded-full bg-gray-100 w-80 cursor-grab dark:bg-gray-600'>
                         <img className='rounded-full pointer-events-none' src="https://i.ibb.co/PrVVm0X/Samrat.png" alt="" />
                     </motion.div>
-                </div>
+                </motion.div>
             </div>
 
         </div>

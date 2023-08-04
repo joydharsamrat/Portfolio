@@ -1,21 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
 import { FaMobileAlt, FaWhatsappSquare, FaMailBulk, FaAddressCard } from "react-icons/fa";
 
 export const ContactMe = () => {
     const form = useRef();
+    const [isLoading, setIsLoading] = useState(false)
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        setIsLoading(true)
         emailjs.sendForm('service_1svuh1q', 'template_m7488xo', form.current, 'yKzn9Z4nQeo_9o-1N')
             .then((result) => {
                 console.log(result.text);
                 e.target.reset();
                 toast.success('Email sent')
+                setIsLoading(false)
             }, (error) => {
                 console.log(error.text);
+                setIsLoading(false)
             });
     };
 
@@ -62,7 +65,7 @@ export const ContactMe = () => {
                             <label>Message</label>
                             <textarea className='textarea rounded-none border-b-gray-600 dark:border-b-gray-300 border-x-0 border-t-0 w-full bg-[#e7ecef] dark:bg-gray-800' name="message" />
                         </div>
-                        <input className='btn btn-outline dark:text-white hover:bg-gray-600' type="submit" value="Send" />
+                        <input className='btn btn-outline dark:text-white hover:bg-gray-600' type="submit" value={`${isLoading ? 'Sending...' : 'Send'}`} />
                     </form>
                 </div>
             </div>
