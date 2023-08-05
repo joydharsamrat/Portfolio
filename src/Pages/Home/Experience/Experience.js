@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const Experience = () => {
     return (
-        <div className=' dark:text-white py-5 min-h-[700px]' id='experience'>
+        <div className=' text-white py-5 min-h-[700px]' id='experience'>
             <h1 className='mt-12 mb-12 text-3xl lg:text-5xl font-bold '>Experience</h1>
             <div className=' relative '>
                 <div className='experience text-3xl grid place-items-center'>

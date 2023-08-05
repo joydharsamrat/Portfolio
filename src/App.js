@@ -11,9 +11,8 @@ function App() {
     });
   }, [])
   return (
-    <div className="max-w-[1350px] mx-auto">
+    <div className="max-w-[1350px] mx-auto pt-16">
       <RouterProvider router={router}>
-
       </RouterProvider>
       <Toaster />
     </div>

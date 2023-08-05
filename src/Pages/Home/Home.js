@@ -11,15 +11,15 @@ const Home = () => {
         <div>
 
             <Banner></Banner>
-            <hr className='border border-white dark:border-gray-600' />
+            <hr className='border border-gray-600' />
             <About></About>
-            <hr className='border border-white dark:border-gray-600' />
+            <hr className='border border-gray-600' />
             <Experience></Experience>
-            <hr className='border border-white dark:border-gray-600' />
+            <hr className='border border-gray-600' />
             <Skills></Skills>
-            <hr className='border border-white dark:border-gray-600' />
+            <hr className='border border-gray-600' />
             <ProjectsSummary></ProjectsSummary>
-            <hr className='border border-white dark:border-gray-600' />
+            <hr className='border border-gray-600' />
             <ContactMe></ContactMe>
         </div>
     );

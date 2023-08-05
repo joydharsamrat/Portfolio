@@ -21,7 +21,7 @@ const ProjectsSummary = () => {
         }
     };
     return (
-        <div data-aos="fade-up" className=' dark:text-white mb-12 py-5 min-h-[700px]' id='projects'>
+        <div data-aos="fade-up" className=' text-white mb-12 py-5 min-h-[700px]' id='projects'>
             <h1 className='mt-12 mb-12 text-3xl lg:text-5xl font-bold '>Some Projects I've worked On</h1>
             <div className='lg:grid lg:grid-cols-2 gap-12 items-center'>
                 <div>
@@ -42,10 +42,10 @@ const ProjectsSummary = () => {
                                     <p className='text-xs'>technologies Used : React, Express js, Tailwind CSS, MongoDB, Firebase,.</p>
                                 </div>
                                 <div className='flex items-center gap-3 mt-5'>
-                                    <motion.a target="_blank" href="https://happy-learning-9da3f.firebaseapp.com/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
+                                    <motion.a target="_blank" href="https://happy-learning-9da3f.firebaseapp.com/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
                                         <FaGithubSquare className=' text-2xl'></FaGithubSquare>
                                     </motion.a>
-                                    <motion.a target="_blank" href="https://happy-learning-9da3f.firebaseapp.com/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
+                                    <motion.a target="_blank" href="https://happy-learning-9da3f.firebaseapp.com/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
                                         <img src="https://i.ibb.co/mq8j9HP/web-removebg-preview.png" alt="" />
                                     </motion.a>
                                 </div>
@@ -77,10 +77,10 @@ const ProjectsSummary = () => {
                                     <p className='text-xs'>technologies Used : React, Express js, Tailwind CSS, MongoDB, Firebase, Stripe.</p>
                                 </div>
                                 <div className='flex items-center gap-3 mt-5'>
-                                    <motion.a target="_blank" href="https://mobihub-521d5.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
+                                    <motion.a target="_blank" href="https://mobihub-521d5.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
                                         <FaGithubSquare className=' text-2xl'></FaGithubSquare>
                                     </motion.a>
-                                    <motion.a target="_blank" href="https://mobihub-521d5.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
+                                    <motion.a target="_blank" href="https://mobihub-521d5.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
                                         <img src="https://i.ibb.co/mq8j9HP/web-removebg-preview.png" alt="" />
                                     </motion.a>
                                 </div>
@@ -101,10 +101,10 @@ const ProjectsSummary = () => {
                                     <p className='text-xs'>technologies Used : React, Express js, Tailwind CSS, MongoDB, Firebase,.</p>
                                 </div>
                                 <div className='flex items-center gap-3 mt-5'>
-                                    <motion.a target="_blank" href="https://github.com/joydharsamrat/storyteller" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
+                                    <motion.a target="_blank" href="https://github.com/joydharsamrat/storyteller" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
                                         <FaGithubSquare className=' text-2xl'></FaGithubSquare>
                                     </motion.a>
-                                    <motion.a target="_blank" href="https://storyteller-c49cf.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
+                                    <motion.a target="_blank" href="https://storyteller-c49cf.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 text-gray-400 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
                                         <img src="https://i.ibb.co/mq8j9HP/web-removebg-preview.png" alt="" />
                                     </motion.a>
                                 </div>
@@ -139,7 +139,7 @@ const ProjectsSummary = () => {
                         onSlideChange={handleSlideChange}
                     >
                         <SwiperSlide>
-                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm ${!isActive && 'opacity-25 border-0 bg-opacity-100 dark:bg-opacity-100 backdrop-blur-none dark:backdrop-blur-none'}`}>
+                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm ${!isActive && 'opacity-25 border-0 bg-opacity-100  backdrop-blur-none '}`}>
 
                                 <div className='h-full overflow-y-hidden hover:overflow-y-scroll px-5 pt-5 element'>
                                     <img className="rounded-xl w-full" src="https://i.ibb.co/QbSQpDZ/Happy-Learning.png" alt="" />
@@ -147,21 +147,21 @@ const ProjectsSummary = () => {
 
                                 <div className="py-2 flex flex-col justify-between items-center gap-5">
                                     <h2 className="card-title">Happy Learning</h2>
-                                    <motion.a target="_blank" href="https://happy-learning-9da3f.firebaseapp.com/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:border-gray-300 border-gray-600 rounded-full flex items-center justify-center'>
+                                    <motion.a target="_blank" href="https://happy-learning-9da3f.firebaseapp.com/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 border-gray-300 rounded-full flex items-center justify-center'>
                                         <img src="https://i.ibb.co/mq8j9HP/web-removebg-preview.png" alt="" />
                                     </motion.a>
                                 </div>
                             </div>}
                         </SwiperSlide>
                         <SwiperSlide>
-                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm ${!isActive && 'opacity-25 border-0 bg-opacity-100 dark:bg-opacity-100 backdrop-blur-none dark:backdrop-blur-none'}`}>
+                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm  ${!isActive && 'opacity-25 border-0 bg-opacity-100 backdrop-blur-none '}`}>
                                 <div className='h-full overflow-y-hidden hover:overflow-y-scroll px-5 pt-5 element'>
                                     <img className=" w-full rounded-xl " src="https://i.ibb.co/7nnydMd/Mobi-Hub-Home-2.png" alt="" />
                                 </div>
                                 <div className="py-2 flex flex-col justify-between items-center gap-5">
                                     <h2 className="card-title text-center">MobiHub</h2>
 
-                                    <motion.a target="_blank" href="https://mobihub-521d5.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:border-gray-300 border-gray-600 rounded-full flex items-center justify-center  hover:border-blue-500'>
+                                    <motion.a target="_blank" href="https://mobihub-521d5.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 border-gray-300  rounded-full flex items-center justify-center  hover:border-blue-500'>
                                         <img src="https://i.ibb.co/mq8j9HP/web-removebg-preview.png" alt="" />
                                     </motion.a>
 
@@ -169,14 +169,14 @@ const ProjectsSummary = () => {
                             </div>}
                         </SwiperSlide>
                         <SwiperSlide>
-                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-white dark:bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm dark:bg-opacity-30 dark:bg-clip-padding dark:backdrop-blur-sm ${!isActive && 'opacity-25 border-0 bg-opacity-100 dark:bg-opacity-100 backdrop-blur-none dark:backdrop-blur-none'}`}>
+                            {({ isActive }) => <div className={`card lg:w-72 h-96 bg-gray-600 shadow-xl border bg-opacity-30 bg-clip-padding backdrop-blur-sm  ${!isActive && 'opacity-25 border-0 bg-opacity-100  backdrop-blur-none '}`}>
                                 <div className='h-full overflow-y-hidden hover:overflow-y-scroll px-5 pt-5 element'>
                                     <img className=" w-full rounded-xl " src="https://i.ibb.co/zsYFWyC/storyteller.png" alt="" />
                                 </div>
                                 <div className="py-2 flex flex-col justify-between items-center gap-5">
                                     <h2 className="card-title">Storyteller</h2>
 
-                                    <motion.a target="_blank" href="https://storyteller-c49cf.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 dark:border-gray-300 border-gray-600 rounded-full flex items-center justify-center '>
+                                    <motion.a target="_blank" href="https://storyteller-c49cf.web.app/" whileHover={{ scale: 1.1 }} className='p-1 border h-8 w-8 border-gray-300 rounded-full flex items-center justify-center '>
                                         <img src="https://i.ibb.co/mq8j9HP/web-removebg-preview.png" alt="" />
                                     </motion.a>
 

@@ -6,7 +6,7 @@ const Skills = () => {
     const ref = useRef(null)
     const isInView = useInView(ref)
     return (
-        <div ref={ref} data-aos="fade-up" className='dark:text-gray-100 mb-10' id='skills'>
+        <div ref={ref} data-aos="fade-up" className='text-gray-100 mb-10' id='skills'>
             <h1 className='mt-12 mb-5 text-3xl lg:text-5xl font-bold'>Technical Skills</h1>
 
             <div className='my-20 flex justify-center items-center gap-20 flex-wrap'>
@@ -42,7 +42,7 @@ const Skills = () => {
 
             </div>
 
-            <div className='flex  gap-32 justify-center flex-wrap'>
+            <div className='flex gap-32 justify-center flex-wrap' style={{ rowGap: '3rem', columnGap: '6rem' }}>
                 <div className='flex items-center gap-5'>
                     <img className='h-8 w-8' src="https://i.ibb.co/TvKjPjs/html.png" alt="" />
                     <p className='text-xl font-bold'>HTML5</p>

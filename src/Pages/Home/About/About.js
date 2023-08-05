@@ -4,7 +4,7 @@ import '../About/about.css'
 const About = () => {
     return (
         <div className='aboutContainer px-2 lg:px-10' id='about'>
-            <div data-aos="fade-up" className=' dark:text-white mb-12 py-5' >
+            <div data-aos="fade-up" className=' text-white mb-12 py-5' >
                 <h1 className='mt-12 mb-12 text-3xl lg:text-5xl font-bold '>About Me</h1>
                 <div className='text-justify '>
                     <p>
