@@ -5,11 +5,10 @@ import ProjectsSummary from './Projects/ProjectsSummary';
 import Skills from './Skills/Skills';
 import About from './About/About';
 import Experience from './Experience/Experience';
-import './home.css'
 
 const Home = () => {
     return (
-        <div className='home'>
+        <div>
 
             <Banner></Banner>
             <hr className='border border-white dark:border-gray-600' />
