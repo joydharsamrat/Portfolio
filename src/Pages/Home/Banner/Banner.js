@@ -77,24 +77,26 @@ const Banner = ({ profile }) => {
           </h1>
           <p className="text-2xl font-semibold">I'm A {profile.designation}</p>
 
-          <a
-            href={profile?.resumeDownloadLink}
-            download="resume of samrat joydhar.pdf"
-          >
-            {" "}
-            <button className="btn btn-outline text-gray-100 hover:bg-gray-600 my-5">
-              Download Resume <FaDownload className="ml-2"></FaDownload>
-            </button>
-          </a>
-          <a
-            href={profile?.resumeViewLink}
-            download="resume of samrat joydhar.pdf"
-          >
-            {" "}
-            <button className="btn btn-outline text-gray-100 hover:bg-gray-600 my-5">
-              View Resume <FaRegEye className="ml-2"></FaRegEye>
-            </button>
-          </a>
+          <div className="my-5">
+            <a
+              href={profile?.resumeDownloadLink}
+              download="resume of samrat joydhar.pdf"
+            >
+              {" "}
+              <button className="btn btn-outline text-gray-100 hover:bg-gray-600 mb-2 md:mb-0">
+                Download Resume <FaDownload className="ml-2"></FaDownload>
+              </button>
+            </a>
+            <a
+              href={profile?.resumeViewLink}
+              download="resume of samrat joydhar.pdf"
+            >
+              {" "}
+              <button className="btn btn-outline text-gray-100 hover:bg-gray-600 ">
+                View Resume <FaRegEye className="ml-2"></FaRegEye>
+              </button>
+            </a>
+          </div>
 
           <div className="flex gap-5">
             <motion.a

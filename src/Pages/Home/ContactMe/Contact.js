@@ -38,7 +38,7 @@ export const ContactMe = () => {
 
   return (
     <div className="text-white my-12" id="contact">
-      <h1 className="mt-12 pt-1 mb-10 text-3xl lg:text-5xl font-bold ">
+      <h1 className="text-3xl font-bold text-center text-white mb-12">
         Get In Touch
       </h1>
 

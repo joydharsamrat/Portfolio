@@ -4,6 +4,7 @@ import { Navigation, Pagination } from "swiper";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "../Projects/projects.css";
+import { Link } from "react-router-dom";
 
 const ProjectsSummary = () => {
   const [projects, setProjects] = useState([]);
@@ -21,11 +22,11 @@ const ProjectsSummary = () => {
     getProjects();
   }, []);
 
-  console.log(projects);
-
   return (
     <div className=" text-white mb-12 py-5 " id="projects">
-      <h1 className="mt-12 mb-12 text-3xl lg:text-5xl font-bold ">Projects</h1>
+      <h1 className="text-3xl font-bold text-center text-white mb-12">
+        Projects
+      </h1>
       <div className="md:w-3/4 mx-auto ">
         <Swiper
           spaceBetween={30}
@@ -61,17 +62,23 @@ const ProjectsSummary = () => {
 
                 <div className="py-2 flex flex-col justify-between items-center gap-5">
                   <h2 className="card-title">{project.name}</h2>
-                  <motion.a
-                    target="_blank"
-                    href="https://happy-learning-9da3f.firebaseapp.com/"
-                    whileHover={{ scale: 1.1 }}
-                    className="p-1 border h-8 w-8 border-gray-300 rounded-full flex items-center justify-center"
-                  >
-                    <img
-                      src="https://i.ibb.co/mq8j9HP/web-removebg-preview.png"
-                      alt=""
-                    />
-                  </motion.a>
+                  <div className="flex items-center justify-center gap-2">
+                    <motion.a
+                      target="_blank"
+                      href={project.liveDemoLink}
+                      whileHover={{ scale: 1.1 }}
+                      className="p-1 border border-gray-300 rounded text-xs"
+                    >
+                      Live Demo
+                    </motion.a>
+                    <motion.a
+                      href={`/project/${project._id}`}
+                      whileHover={{ scale: 1.1 }}
+                      className="p-1 border border-gray-300 rounded text-xs"
+                    >
+                      Details
+                    </motion.a>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
