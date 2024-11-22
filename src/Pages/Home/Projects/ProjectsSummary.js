@@ -4,7 +4,6 @@ import { Navigation, Pagination } from "swiper";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "../Projects/projects.css";
-import { Link } from "react-router-dom";
 
 const ProjectsSummary = () => {
   const [projects, setProjects] = useState([]);
