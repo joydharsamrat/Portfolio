@@ -49,6 +49,39 @@ const Experience = () => {
             <RxDotFilled></RxDotFilled>
           </motion.p>
         </div>
+        <div className="insituExp text-3xl  grid place-items-center">
+          <motion.p
+            initial={{ scale: 0.2 }}
+            animate={{ scale: 2 }}
+            transition={{
+              duration: 1,
+              yoyo: Infinity,
+            }}
+          >
+            <RxDotFilled></RxDotFilled>
+          </motion.p>
+        </div>
+        <div className="grid lg:grid-cols-2 justify-center gap-5 lg:gap-36 items-start ml-10 lg:ml-0 mt-12 lg:mt-32">
+          <div className="lg:text-right title">
+            <h2 className="text-2xl font-bold ">Web Developer Intern</h2>
+            <p className="font-semibold">February 2023 - Jun 2023</p>
+          </div>
+          <div className="text-left">
+            <p className="font-semibold lg:text-justify">
+              I have independently developed a website for the company using
+              Next.js for front-end development, Express.js for server-side
+              scripting, and MongoDB for database management. <br />
+              <a
+                className="btn btn-link text-blue-700"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.insituagritech.com/"
+              >
+                Website
+              </a>
+            </p>
+          </div>
+        </div>
         <div className="grid lg:grid-cols-2 justify-center gap-5 lg:gap-36 items-start ml-10 lg:ml-0 mt-12 lg:mt-32">
           <div className="lg:text-right title">
             <h2 className="text-2xl font-bold ">Web Developer Intern</h2>
