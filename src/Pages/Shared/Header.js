@@ -82,6 +82,11 @@ const Header = () => {
                 </HashLink>
               </li>
               <li>
+                <HashLink smooth to="#blogs">
+                  Blogs
+                </HashLink>
+              </li>
+              <li>
                 <HashLink smooth to="#contact">
                   Contact
                 </HashLink>
@@ -106,6 +111,9 @@ const Header = () => {
               </li>
               <li>
                 <NavLink href="#projects">Projects</NavLink>
+              </li>
+              <li>
+                <NavLink href="#blogs">Blogs</NavLink>
               </li>
               <li>
                 <NavLink href="#contact">Contact</NavLink>

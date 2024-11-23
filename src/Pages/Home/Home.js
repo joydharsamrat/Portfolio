@@ -6,6 +6,7 @@ import Skills from "./Skills/Skills";
 import About from "./About/About";
 import Experience from "./Experience/Experience";
 import { useLocation } from "react-router-dom";
+import Blogs from "./Blogs/Blogs";
 
 const Home = () => {
   const [profile, setProfile] = useState({});
@@ -46,6 +47,7 @@ const Home = () => {
       <Experience></Experience>
       <Skills></Skills>
       <ProjectsSummary></ProjectsSummary>
+      <Blogs />
       <ContactMe></ContactMe>
     </div>
   );

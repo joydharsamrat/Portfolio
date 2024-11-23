@@ -44,13 +44,13 @@ export const ContactMe = () => {
 
       <div className="grid lg:grid-cols-3 gap-10 justify-around">
         <div className="bg-gray-600 p-5 rounded bg-opacity-30 bg-clip-padding backdrop-blur-sm">
-          <h3 className="text-3xl lg:text-5xl mb-5">Contacts</h3>
+          <h3 className="text-2xl mb-5">Contacts</h3>
           <div className="flex items-center gap-3 my-2">
             <p className="p-2 h-12 w-12 rounded-full flex justify-center items-center bg-gray-800">
               <FaMobileAlt className="text-2xl"></FaMobileAlt>
             </p>
             <p className="my-3">
-              <span className="text-3xl">Mobile</span> <br /> +8801788738658
+              <span className="text-xl">Mobile</span> <br /> +8801788738658
             </p>
           </div>
           <div className="flex items-center gap-3 my-2">
@@ -58,7 +58,7 @@ export const ContactMe = () => {
               <FaWhatsappSquare className="text-2xl"></FaWhatsappSquare>
             </p>
             <p className="my-3">
-              <span className="text-3xl">Whatsapp</span> <br /> +8801788738658
+              <span className="text-xl">Whatsapp</span> <br /> +8801788738658
             </p>
           </div>
           <div className="flex items-center gap-3 my-2">
@@ -66,7 +66,7 @@ export const ContactMe = () => {
               <FaMailBulk className="text-2xl"></FaMailBulk>
             </p>
             <p className="my-3">
-              <span className="text-3xl">Email</span> <br />
+              <span className="text-xl">Email</span> <br />
               joydharsamrat@gmail.com
             </p>
           </div>
@@ -75,14 +75,14 @@ export const ContactMe = () => {
               <FaAddressCard className="text-2xl"></FaAddressCard>
             </p>
             <p className="my-3">
-              <span className="text-3xl">Address</span> <br />
+              <span className="text-xl">Address</span> <br />
               Gouripur <br />
               Mymensingh, Bangladesh
             </p>
           </div>
         </div>
         <div className="lg:col-span-2 p-5 rounded-xl mt-12 lg:mt-0">
-          <h3 className="text-3xl lg:text-5xl mb-5">Message Me</h3>
+          <h3 className="text-2xl  mb-5">Message Me</h3>
           <form ref={form} onSubmit={sendEmail}>
             <div className="my-3">
               <label>Name</label>
