@@ -67,7 +67,7 @@ const BlogDetails = () => {
             <h1 className="text-2xl font-bold text-[#184e77] mb-4">{title}</h1>
             {/* Intro */}
             <p className="text-gray-600 mb-4">{intro}</p>
-            {/* Metadata */}
+
             <div className="flex items-center text-sm text-gray-500 mb-6">
               <span className="mr-4">
                 <strong>Category:</strong> {category.title}

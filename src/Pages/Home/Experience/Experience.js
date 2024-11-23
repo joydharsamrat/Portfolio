@@ -25,14 +25,14 @@ const Experience = () => {
 
   if (loading) {
     return (
-      <div className="h-screen flex justify-center items-center">
+      <div className="h-96 flex justify-center items-center">
         <Loader />
       </div>
     );
   }
 
   return (
-    <section className="py-10 min-h-screen " id="experience">
+    <section className="py-10  " id="experience">
       <h1 className="text-3xl font-bold text-center text-white mb-12">
         Experience
       </h1>

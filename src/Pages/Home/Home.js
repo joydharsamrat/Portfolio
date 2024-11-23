@@ -10,7 +10,6 @@ import Blogs from "./Blogs/Blogs";
 
 const Home = () => {
   const [profile, setProfile] = useState({});
-
   const location = useLocation();
 
   useEffect(() => {
@@ -18,11 +17,14 @@ const Home = () => {
       const sectionId = location.state.scrollTo;
       const targetElement = document.getElementById(sectionId);
       if (targetElement) {
-        const targetPosition = targetElement.offsetTop;
-        window.scrollTo({
-          top: targetPosition - 70, // Adjust for header height
-          behavior: "smooth",
-        });
+        setTimeout(() => {
+          const targetPosition = targetElement.offsetTop;
+          window.scrollTo({
+            top: targetPosition - 70,
+            behavior: "smooth",
+          });
+          window.history.replaceState(null, null, `#${sectionId}`);
+        }, 500);
       }
     }
   }, [location.state]);

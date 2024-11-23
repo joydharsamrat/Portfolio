@@ -9,10 +9,10 @@ const NavLink = ({ href, children }) => {
     const sectionId = href.slice(1); // Remove the "#" to get the target ID
 
     if (location.pathname !== "/") {
-      // If not on the home page, navigate to home and scroll after loading
+      // Navigate to home with state indicating the target section
       navigate("/", { state: { scrollTo: sectionId } });
     } else {
-      // If on the home page, scroll immediately
+      // Directly scroll if already on the home page
       scrollToSection(sectionId);
     }
   };
@@ -25,7 +25,7 @@ const NavLink = ({ href, children }) => {
         top: targetPosition - 70, // Adjust for header height
         behavior: "smooth",
       });
-      window.history.pushState(null, null, `#${sectionId}`);
+      window.history.replaceState(null, null, `#${sectionId}`);
     }
   };
 

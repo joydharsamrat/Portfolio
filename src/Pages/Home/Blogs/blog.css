@@ -1,18 +1,6 @@
-.element {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-.element::-webkit-scrollbar {
-  display: none;
-  /* WebKit */
-}
-
-/* Skeleton Loader Styles */
+/* Skeleton Loader Styles for Blog Cards */
 .skeleton-card {
-  background-color: #333;
+  background-color: #f0f0f0;
   border-radius: 8px;
   padding: 16px;
   display: flex;
@@ -31,14 +19,24 @@
 }
 
 .skeleton-text {
-  height: 20px;
   background-color: #e0e0e0;
   margin-bottom: 10px;
   border-radius: 4px;
   animation: loading 1.5s infinite linear;
 }
 
-.skeleton-text:last-child {
+.skeleton-title {
+  height: 24px;
+  width: 80%;
+}
+
+.skeleton-intro {
+  height: 16px;
+  width: 90%;
+}
+
+.skeleton-category {
+  height: 12px;
   width: 60%;
 }
 

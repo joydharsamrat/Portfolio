@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import "../Blogs/blog.css";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -28,7 +29,26 @@ const Blogs = () => {
   }, []);
 
   if (loading) {
-    return <div className="text-center py-10">Loading blogs...</div>;
+    return (
+      <section className="py-10" id="blogs">
+        <div className="container mx-auto px-5">
+          <h2 className="text-3xl font-bold text-center text-white mb-12">
+            Blogs
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Skeleton Loaders for Blog Cards */}
+            {[1, 2, 3].map((_, index) => (
+              <div key={index} className="skeleton-card">
+                <div className="skeleton-image"></div>
+                <div className="skeleton-text skeleton-title"></div>
+                <div className="skeleton-text skeleton-intro"></div>
+                <div className="skeleton-text skeleton-category"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
   }
 
   if (error) {
@@ -68,7 +88,7 @@ const Blogs = () => {
                     </span>
                     <a
                       href={`/blog/${blog.slug}`}
-                      className="btn btn-link text-blue-600 "
+                      className="btn btn-link text-blue-600"
                     >
                       Read More
                     </a>
